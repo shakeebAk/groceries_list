@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+  <link rel="stylesheet" href="css/font-awesome.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/login.css" />
+  
+  <script type="text/javascript">
+        function preventBack() { window.history.forward(); }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
+  
+</head>
+
+<body>
+
+	<div class="form-modal">
+    
+    <div class="form-toggle">
+        <button id="login-toggle" onclick="toggleLogin()">log in</button>
+        <button id="signup-toggle" onclick="toggleSignup()">sign up</button>
+    </div>
+
+    <div id="login-form">
+        <form>
+            <input type="text" id="userName" placeholder="Enter username"/>
+            <input type="password" id= "userPw" placeholder="Enter password"/>
+            <button type="button" id= "login_btn"  class="btn login" value="Login" onclick="check()">login</button>
+           
+        </form>
+    </div>
+
+    <div id="signup-form">
+        <form>
+            
+            <input type="text" id="name" placeholder="Create username"/>
+            <input type="password" id= "pw" placeholder="Create password"/>
+            <button type="button" id="rgstr_btn" class="btn signup" value="Register" onclick="store()">create account</button>
+          
+        </form>
+    </div>
+
+</div>
+
+	
+	
+	
+	
+	<script src="js/login.js"></script>
+	
+	
+</body>
+	
+</html>
